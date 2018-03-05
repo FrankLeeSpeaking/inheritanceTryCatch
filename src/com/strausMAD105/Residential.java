@@ -1,8 +1,10 @@
 package com.strausMAD105;
 
-
-
 import java.text.NumberFormat;
+
+/**
+ *
+ */
 
 public class Residential extends Customer {
     private double RATE = 6;

@@ -3,9 +3,16 @@ package com.strausMAD105;
 
 import java.util.Scanner;
 
+/**
+ *  inheritance assignment MAD105
+ */
 public class Main {
 
-
+    /**
+     * The main method prompts user for type of client, commercial or residential
+     * includes methods for specific client data entered by user
+     * @param args generates and calls classes for a landscaping business
+     */
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         int input = 0;
@@ -45,6 +52,12 @@ public class Main {
     } //---END method main
 
     // ------------------ User input for commercial
+
+    /**
+     *  a void method that gets client specifics for a commercial client.
+     *  object variable client assigned to commercial class which calculates charges and displays invoice
+     */
+
     public static void commercialClient(){
         Boolean multi;
         String discount;
@@ -82,6 +95,10 @@ public class Main {
 
     }// --------- END public method commercialClient()
 
+    /**
+     * a void method that gets client specifics for a residential client.
+     *  object variable client assigned to commercial class which calculates charges and displays invoice
+     */
     public static void residentialClient(){
         Boolean multi;
         String quote;

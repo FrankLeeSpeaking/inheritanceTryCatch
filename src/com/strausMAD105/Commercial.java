@@ -1,8 +1,10 @@
 package com.strausMAD105;
 
-
-
 import java.text.NumberFormat;
+
+/**
+ * Extends super class Customer
+ */
 
 public class Commercial extends Customer {
     private double RATE = 5;
@@ -11,11 +13,23 @@ public class Commercial extends Customer {
     private String primaryName;
     private boolean isMany;
 
+    /**
+     * Default constructor, no arguments passed result in pseudo-error message
+     */
     public Commercial()////******************* Default Constructor
     {
         System.out.println("nothing in Commercial");
     }//******************* END Default Constructor
 
+    /**
+     *
+     * @param name  = client name inherited from Customer
+     * @param address = client address inherited from Customer
+     * @param phone = inherited from Customer
+     * @param multi = boolean to apply multi-property discount y or n
+     * @param propertyName = name of main property? Not quite sure why required
+     * @param totalArea = inherited from Customer
+     */
     public Commercial (String name, String address, String phone, Boolean multi, String propertyName, Double totalArea)
     {
         super(name, address, phone, totalArea);// --------- Constructors inherited from Customer
@@ -54,6 +68,10 @@ public class Commercial extends Customer {
         return temp;
     }
 
+    /**
+     * method to calculate charges for the week
+     * writes date in invoice form
+     */
     public void calculateWeekly()
     {
         NumberFormat nf = NumberFormat.getNumberInstance();// -------- formatter object for number display with commas
