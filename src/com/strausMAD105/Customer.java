@@ -56,17 +56,27 @@ public class Customer {
         return customerAddress;
     }//---- END GET address -----------------------
 
+    /**
+     *
+     * @return
+     */
     public final String getCustomerPhone()
     {
         return customerPhone;
     }//---- END GET phone -----------------------
 
+    /**
+     *
+     * @return
+     */
     public final double getSquareFootage()
     {
         return squareFootage;
     }//---- END GET squareFootage -----------------------
 
-
+    /**
+     *
+     */
     public void writeCommonCustomer()
     {
         System.out.println("Name: " + getCustomerName());
