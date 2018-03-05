@@ -1,13 +1,18 @@
 package com.strausMAD105;
 
-import java.text.NumberFormat;
 
+/**
+ *
+ */
 public class Customer {
     private String customerName;
     private String customerAddress;
     private String customerPhone;
     private double squareFootage;
 
+    /**
+     *
+     */
     public Customer()//******************* Default Constructor
     {
         //customerName = "Name in default constructor";
@@ -17,6 +22,13 @@ public class Customer {
 
     }// ******************* END of default constructor
 
+    /**
+     *
+     * @param name name
+     * @param address address
+     * @param phone phone
+     * @param totalArea area
+     */
     public Customer (String name, String address, String phone, double totalArea)
     {
         customerName = name;
@@ -26,11 +38,19 @@ public class Customer {
 
     }// ----- END method Customer ------------------
 
+    /**
+     *
+     * @return customerName
+     */
     public String getCustomerName()
     {
         return customerName;
     }//---- END GET name -----------------------
 
+    /**
+     *
+     * @return customerAddress
+     */
     public final String getCustomerAddress()
     {
         return customerAddress;

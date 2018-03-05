@@ -53,6 +53,9 @@ public class Residential extends Customer {
         return temp;
     }
 
+    /**
+     *
+     */
     public void calculateWeekly()
     {
         NumberFormat nf = NumberFormat.getNumberInstance();// -------- formatter object for number display with commas
