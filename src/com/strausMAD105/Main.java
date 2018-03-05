@@ -11,8 +11,7 @@ public class Main {
         int input = 0;
 //------------- Main Menu
 
-
-        try {
+        try {// ----------- TRY to CATCH InputMismatchException from user input
             while (input == 0) {
                     System.out.println("1.) For Commercial property: ");
                     System.out.println("2.) For Residential property: ");
@@ -39,7 +38,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Caught InputMismatchException in method main");
             System.out.println("Click on the green arrow on left to re-start");
-            //e.printStackTrace();
+            //------- END of Try/Catch
         }
 
 
@@ -57,7 +56,7 @@ public class Main {
         String address = keyboard.nextLine();
         System.out.println("Enter phone number");
         String phone = keyboard.next();
-        try {
+        try {// ----------- TRY to CATCH InputMismatchException from user input
             do {
                 System.out.print("Does this account have more than one property under contract? (y or n)");
                 discount  = keyboard.next();
@@ -78,8 +77,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Caught InputMismatchException in commercialClient");
             System.out.println("Click on the green arrow on left to re-start");
-            //e.printStackTrace();
-        }
+        }//------- END of Try/Catch
 
 
     }// --------- END public method commercialClient()
@@ -91,7 +89,7 @@ public class Main {
         int whichType;
         Scanner keyboard = new Scanner(System.in);
 
-        try {
+        try {// ----------- TRY to CATCH InputMismatchException from user input
             System.out.println("RESIDENTIAL CUSTOMER");
             System.out.println("Enter customer name: ");
             String name = keyboard.nextLine();
@@ -128,8 +126,7 @@ public class Main {
         } catch (Exception e) {
             System.out.println("Caught InputMismatchException in residentialClient");
             System.out.println("Click on the green arrow on left to re-start");
-            //e.printStackTrace();
-        }
+        }//------- END of Try/Catch
 
     }// --------- END public method residentialClient()
 
